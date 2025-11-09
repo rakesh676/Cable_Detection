@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaxial Cable Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Coaxial Cable Monitoring System</h1>
+    </header>
+
+    <section id="summary">
+        <div class="summary-card" id="total-devices">Total Devices: 0</div>
+        <div class="summary-card healthy">Healthy: 0</div>
+        <div class="summary-card warning">Warning: 0</div>
+        <div class="summary-card break">Break: 0</div>
+    </section>
+
+    <section id="cable-map">
+        <h2>Cable Line (10 km)</h2>
+        <div class="line" id="cableLine"></div>
+    </section>
+
+    <section id="device-dashboard">
+        <h2>Device Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Device ID</th>
+                    <th>Distance (km)</th>
+                    <th>Status</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody id="deviceTableBody">
+                <!-- Filled dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
